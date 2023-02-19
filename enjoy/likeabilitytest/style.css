@@ -125,6 +125,10 @@
 
 /* responsive */
 @media screen and (max-width: 768px) {
+    .suject {
+        font-size: 4rem;
+    }
+    
     .file-upload-image {
         max-height: 18rem;
         max-width: 18rem;
