@@ -8,6 +8,7 @@ toggleBtn.addEventListener('click', () => {
     document.querySelector('.navbar_toggleBtn i').classList.toggle('fa-bars');
 });
 
+
 $(document).ready(function () {
 
     $('a[href*="#"]').on('click', function (e) {
