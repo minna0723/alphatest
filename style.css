@@ -729,6 +729,10 @@ section.enjoy{
     max-width: 330px;
     margin: 2.5rem 0 0 0;
   }
+  .about-more a{
+    padding: 1.4rem 6rem;
+    font-size: 2rem;
+  }
 
   .faq_main {
     width: 80%;
