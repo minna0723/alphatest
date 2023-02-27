@@ -62,7 +62,7 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-614bfbd87fbedad0"></script>
-
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 
 <body>
@@ -124,77 +124,83 @@
 
   <!-- Main -->
   </div>
-  <h1 class="suject">페로몬 테스트</h1>
-  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-  <div>
-    <p class="precise">※ 페로몬 : 이성을 유혹하는 화학적 신호</p>
-  </div>
-
-  <div class="file-upload">
-    <div class="image-upload-wrap">
-      <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
+  <div id="test_capture">
+    <h1 class="suject">페로몬 테스트</h1>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  
+    <div>
+      <p class="precise">※ 페로몬 : 이성을 유혹하는 화학적 신호</p>
     </div>
-    <span class="result-label">
-      <div class="file-upload-content">
-        <div class="result-container">
-          <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-        </div>
-        <div class="result-message"></div>
-        <div id="label-container"></div>
-        <div class="image-title-wrap"></div>
-        <div class="loadingBox">
-          <div class="dim"></div>
-          <div class="circle"></div>
-        </div>
-    </span>
-    <button type="button" onclick="removeUpload()" class="remove-image">
-      다른 사진으로 재시도
-    </button>
+  
+    <div class="file-upload">
+      <div class="image-upload-wrap" style="background-color: #000;">
+        <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
+      </div>
+      <span class="result-label">
+        <div class="file-upload-content">
+          <div class="result-container">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+          </div>
+          <div class="result-message"></div>
+          <div id="label-container"></div>
+          <div class="image-title-wrap"></div>
+          <div class="loadingBox">
+            <div class="dim"></div>
+            <div class="circle"></div>
+          </div>
+      </span>
+      <button id="shot">screen shot</button>
+      <button type="button" onclick="removeUpload()" class="remove-image">
+        다른 사진으로 재시도
+      </button>
+    </div>
+    </div>
+  
+  
+    <div class="hashtags">
+      <h3>#hashtags #follow #like<br>#페로몬 테스트 #페로몬 점수 #나의 페로몬</h3>
+    </div>
   </div>
-  </div>
-
-
-  <div class="hashtags">
-    <h3>#hashtags #follow #like<br>#페로몬 테스트 #페로몬 점수 #나의 페로몬</h3>
-  </div>
-
-
-  <div class="let-share">
-    <p>공유하기 ↯</p>
-  </div>
-
-  <div class="share">
-
-    <span class="naver">
-      <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
-      <script type="text/javascript">
-        new ShareNaver.makeButton({
-          "type": "d"
-        });
-      </script>
-
-
-      <a href="https://www.instagram.com/" target="_blank"><img src="/common/img/insta.png" alt="인스타그램 공유"></a>
-
-    </span>
-
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <span class="addthis_inline_share_toolbox_y39o"></span>
-
-  </div>
-
-  <div class="add-message">
-    <p>* 사진은 시스템에 절대 저장되지 않습니다.</p>
-    <p>* 현실 반영되어 각도, 배경에 따라 결과가 다르게 나타날 수 있습니다.</p>
-    <p>* 결과 공유를 통해 정확도를 확인해보세요.</p>
-  </div>
-
-  <div class="other-test">
-
-    <button><a href="../">다른 테스트하러 가기</a></button>
-
-  </div>
+  
+  
+  
+    <div class="let-share">
+      <p>공유하기 ↯</p>
+    </div>
+  
+    <div class="share">
+  
+      <span class="naver">
+        <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+        <script type="text/javascript">
+          new ShareNaver.makeButton({
+            "type": "d"
+          });
+        </script>
+  
+  
+        <a href="https://www.instagram.com/" target="_blank"><img src="/common/img/insta.png" alt="인스타그램 공유"></a>
+  
+      </span>
+  
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <span class="addthis_inline_share_toolbox_y39o"></span>
+  
+    </div>
+  
+    <div class="add-message">
+      <p>* 사진은 시스템에 절대 저장되지 않습니다.</p>
+      <p>* 현실 반영되어 각도, 배경에 따라 결과가 다르게 나타날 수 있습니다.</p>
+      <p>* 결과 공유를 통해 정확도를 확인해보세요.</p>
+    </div>
+  
+    <div class="other-test">
+  
+      <button><a href="../">다른 테스트하러 가기</a></button>
+  
+    </div>
+ 
 
   <div class="adsense">
 
