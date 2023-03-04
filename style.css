@@ -191,7 +191,7 @@ section.enjoy{
   border-bottom: 3px solid gray;
 }
 .enjoy_menu:nth-child(1):hover{border-bottom: 3px solid #E71837;}
-.enjoy_menu:nth-child(2):hover{border-bottom: 3px solid blueviolet;}
+.enjoy_menu:nth-child(2):hover{border-bottom: 3px solid #33A474;}
 .enjoy_menu:nth-child(3):hover{border-bottom: 3px solid #f9320c;}
 .enjoy_menu:nth-child(4):hover{border-bottom: 3px solid #010a13;}
 .enjoy_menu:nth-child(5):hover{border-bottom: 3px solid #374d9a;}
@@ -207,7 +207,7 @@ section.enjoy{
   height: 13.9rem;
 }
 .enjoy_menu:nth-child(1) .enjoy_img{background: url(/img/pheromonetest.jpg) center no-repeat;background-size: contain;}
-.enjoy_menu:nth-child(2) .enjoy_img{background: url(/img/zzanggutest.jpg) center no-repeat;background-size: contain;}
+.enjoy_menu:nth-child(2) .enjoy_img{background: url(/img/facembti.jpg) center no-repeat;background-size: contain;}
 .enjoy_menu:nth-child(3) .enjoy_img{background: url(/img/nicknametest.jpg) center no-repeat;background-size: contain;}
 .enjoy_menu:nth-child(4) .enjoy_img{background: url(/img/hiddenface.jpg) center no-repeat;background-size: contain;}
 .enjoy_menu:nth-child(5) .enjoy_img{background: url(/img/pokemonface.jpg) center no-repeat;background-size: contain;}
@@ -223,7 +223,7 @@ section.enjoy{
   margin: 0 auto 0.5rem;
 }
 .enjoy_menu:nth-child(1) .enjoy_content h3{color: #E71837;}
-.enjoy_menu:nth-child(2) .enjoy_content h3{color: blueviolet;}
+.enjoy_menu:nth-child(2) .enjoy_content h3{color: #33A474;}
 .enjoy_menu:nth-child(3) .enjoy_content h3{color: #f9320c;}
 .enjoy_menu:nth-child(4) .enjoy_content h3{color: #010a13;}
 .enjoy_menu:nth-child(5) .enjoy_content h3{color: #374d9a;}
