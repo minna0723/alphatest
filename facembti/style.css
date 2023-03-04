@@ -4,53 +4,135 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'SangSangRock';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SangSangRockOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.test_bg{
+    background: url(img/test_bg.jpg) center center no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding: 1rem 0;
+    width: 67rem;
+    max-width: 100%;
+}
 
 .suject {
-    font-family: 'SBAggroM', sans-serif;
-    font-size: 3rem;
-    display: block;
-    background: url(img/logo.png) center center / contain no-repeat;
-    height: 6rem;
-    margin: 4rem auto 2rem;
-    color: transparent;
+    font-family: 'SangSangRock',sans-serif;
+    margin: 3.5rem auto 0;
+    text-align: center;
+}
+.suject .txt_face{
+    color: #000;
+    font-size: 10rem;
+    -webkit-text-stroke: 0.2rem #fff;
+}
+.suject .txt_mbti{
+    font-size: 10rem;
+    -webkit-text-stroke: 0.3rem #40220F;
+}
+.txt_mbti_m{color: #FFC509;}
+.txt_mbti_b{color: #FD8A69;}
+.txt_mbti_t{color: #B8E6E1;}
+.txt_mbti_i{color: #7ACDEB;}
+
+.subject_eng{
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    margin-top: -0.6rem;
 }
 
 .precise {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     text-align: center;
-    margin: 0 auto;
-    color: rgba(255,255,255,0.9);
-    margin-bottom: 3rem;
-    font-size: 1.6rem;
-    font-family: 'SBAggroM', sans-serif;
+    margin: 2rem 0;
+}
+.precise div{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 28%;
+    padding: 1.1rem 1rem 1.6rem;
+    height: 8rem;
+}
+.precise div img{
+    margin-bottom: 0.8rem;
+}
+.precise div p{
+    color: #424242;
+    line-height: 1.3;
+    font-weight: 600;
 }
 
-.file-upload {
-    height: 20rem;
-    margin: 0 auto;
-}
 .image-upload-wrap {
-    border-radius: 100%;
-    background: url("img/imgclick_btn.png");
-    object-fit: cover;
-    background-position: center;
-    background-size: 20rem;
-    background-repeat: no-repeat;
-    border: 0.2rem dashed red;
-    height: 100%;
-    width: 20rem;
+    border-radius: 18%;
+    background-color: #93BAD7;
+    height: 20rem;
+    width: 24rem;
     margin: 0 auto;
+    position: relative;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.image-upload-wrap:hover,
+.image-upload-wrap:hover .upload_btn::before{
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 .file-upload-input {
     position: absolute;
     margin: 0;
     padding: 0;
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     outline: none;
     opacity: 0;
     cursor: pointer;
-    object-fit: cover;
     display: inline-block;
+    z-index: 1;
+}
+.image-upload-wrap .upload_btn{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.image-upload-wrap .upload_btn::before{
+    content: '';
+    display: inline-block;
+    width: 6rem;
+    height:6rem;
+    border-radius: 100%;
+    background: #fff url(img/camera_icon.png) center center no-repeat;
+    background-size:84%;
+    position: absolute;
+    left: 80%;
+    bottom: -6%;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.image-upload-wrap .upload_btn p{
+    font-family: 'GmarketSansMedium',sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0 auto 0.4rem;
+    line-height: 1.2;
+    text-align: center;
+}
+.image-upload-wrap .upload_btn i{
+    font-size: 14rem;
+    color: rgba(255, 255, 255, 0.6);
 }
 .file-upload-content {
     display: none;
@@ -58,10 +140,6 @@
     width: 100%;
 }
 
-.image-upload-wrap:hover {
-    border: 2px solid blanchedalmond;
-    box-shadow: rgb(255 255 255) 1px 1px 10px
-}
 
 
 #label-container {
@@ -129,4 +207,28 @@
     font-size: 1.8rem;
     font-weight: 100;
     line-height: 1.5;
+}
+
+/* responsive */
+@media screen and (max-width:900px){
+    .precise {
+        flex-direction: column;
+    }
+    .precise div{
+        width: 88%;
+        display: flex;
+        align-items: center;
+        padding: 1.1rem 2rem 1rem;
+        height: auto;
+        margin-bottom: 0.8rem;
+    }
+    .precise div img{
+        margin-bottom: 0rem;
+        margin-right: 1rem;
+        width: 3.4rem;
+    }
+    .precise div p{
+        text-align: left;
+        font-size: 1.4rem;
+    }
 }

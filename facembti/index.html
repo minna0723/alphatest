@@ -125,76 +125,93 @@
 
   <!-- Main -->
   </div>
-  <h1 class="suject">관상MBTI</h1>
-  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-  <div>
-    <p class="precise">※ 페로몬 : 이성을 유혹하는 화학적 신호</p>
-  </div>
-
-  <div class="file-upload">
-    <div class="image-upload-wrap">
-      <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
+  <div class="test_bg">
+    <h1 class="suject"><span class="txt_face">관상</span> <span class="txt_mbti txt_mbti_m">M</span><span class="txt_mbti txt_mbti_b">B</span><span class="txt_mbti txt_mbti_t">T</span><span class="txt_mbti txt_mbti_i">I</span></h1>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <p class="subject_eng">Face MBTI test</p>
+    <div class="precise">
+      <div>
+        <img src="img/precise_icon1.png" alt="clock">
+        <p>총 검사 시간은 5초 내외입니다.</p>
+      </div>
+      <div>
+        <img src="img/precise_icon2.png" alt="robot">
+        <p>사람 얼굴을 학습한 AI가 당신의 MBTI 유형을 판단합니다.</p>
+      </div>
+      <div>
+        <img src="img/precise_icon3.png" alt="think">
+        <p>다른 사람, 남들이 보는 나의 MBTI는 무엇일까요?</p>
+      </div>
     </div>
-    <span class="result-label">
-      <div class="file-upload-content">
-        <div class="result-container">
-          <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+  
+    <div class="file-upload">
+      <div class="image-upload-wrap">
+        <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
+        <div class="upload_btn">
+          <p>클릭하여 얼굴사진을 넣어주세요.</p>
+          <i class="fa-solid fa-user"></i>
         </div>
-        <div class="result-message"></div>
-        <div id="label-container"></div>
-        <div class="image-title-wrap"></div>
-        <div class="loadingBox">
-          <div class="dim"></div>
-          <div class="circle"></div>
-        </div>
-    </span>
-    <button type="button" onclick="removeUpload()" class="remove-image">
-      다른 사진으로 재시도
-    </button>
-  </div>
-  </div>
-
-
-  <div class="hashtags">
-    <h3>#hashtags #follow #like<br>#관상MBTI #얼굴MBTI #관상은 과학</h3>
-  </div>
-
-
-  <div class="let-share">
-    <p>공유하기 ↯</p>
-  </div>
-
-  <div class="share">
-
-    <span class="naver">
-      <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
-      <script type="text/javascript">
-        new ShareNaver.makeButton({
-          "type": "d"
-        });
-      </script>
-
-
-      <a href="https://www.instagram.com/" target="_blank"><img src="/common/img/insta.png" alt="인스타그램 공유"></a>
-
-    </span>
-
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <span class="addthis_inline_share_toolbox_y39o"></span>
-
-  </div>
-
-  <div class="add-message">
-    <p>* 사진은 시스템에 절대 저장되지 않습니다.</p>
-    <p>* 현실 반영되어 각도, 배경에 따라 결과가 다르게 나타날 수 있습니다.</p>
-    <p>* 결과 공유를 통해 정확도를 확인해보세요.</p>
-  </div>
-
-  <div class="other-test">
-
-    <button><a href="../">다른 테스트하러 가기</a></button>
-
+      </div>
+      <span class="result-label">
+        <div class="file-upload-content">
+          <div class="result-container">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+          </div>
+          <div class="result-message"></div>
+          <div id="label-container"></div>
+          <div class="image-title-wrap"></div>
+          <div class="loadingBox">
+            <div class="dim"></div>
+            <div class="circle"></div>
+          </div>
+      </span>
+      <button type="button" onclick="removeUpload()" class="remove-image">
+        다른 사진으로 재시도
+      </button>
+    </div>
+    </div>
+  
+  
+    <div class="hashtags">
+      <h3>#hashtags #follow #like<br>#관상MBTI #얼굴MBTI #관상은 과학</h3>
+    </div>
+  
+  
+    <div class="let-share">
+      <p>공유하기 ↯</p>
+    </div>
+  
+    <div class="share">
+  
+      <span class="naver">
+        <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+        <script type="text/javascript">
+          new ShareNaver.makeButton({
+            "type": "d"
+          });
+        </script>
+  
+  
+        <a href="https://www.instagram.com/" target="_blank"><img src="/common/img/insta.png" alt="인스타그램 공유"></a>
+  
+      </span>
+  
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <span class="addthis_inline_share_toolbox_y39o"></span>
+  
+    </div>
+  
+    <div class="add-message">
+      <p>* 사진은 시스템에 절대 저장되지 않습니다.</p>
+      <p>* 현실 반영되어 각도, 배경에 따라 결과가 다르게 나타날 수 있습니다.</p>
+      <p>* 결과 공유를 통해 정확도를 확인해보세요.</p>
+    </div>
+  
+    <div class="other-test">
+  
+      <button><a href="../">다른 테스트하러 가기</a></button>
+  
+    </div>
   </div>
 
   <div class="adsense">
