@@ -16,6 +16,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 .test_bg{
     background: url(img/test_bg.jpg) center center no-repeat;
@@ -57,7 +63,7 @@
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem 0 3rem;
 }
 .precise div{
     border-radius: 10px;
@@ -73,6 +79,23 @@
     color: #424242;
     line-height: 1.3;
     font-weight: 600;
+}
+
+.file-upload{
+    position: relative;
+    width: 46rem;
+    margin: auto;
+}
+.file-upload.result_bg::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 50%;
+    display: inline-block;
+    background-color: #33A474;
+    border-radius: 1rem;
 }
 
 .image-upload-wrap {
@@ -140,8 +163,6 @@
     width: 100%;
 }
 
-
-
 #label-container {
     display: none;
 }
@@ -159,7 +180,7 @@
     height: 18rem;
     margin: auto;
     z-index: 1;
-    border: 0.3rem solid #f8c1f8;
+    border: 0.3rem solid #fff;
 }
 
 .file-upload-image {
@@ -173,40 +194,89 @@
 .loadingBox {
     display: none;
     width: 42rem;
-    height: 28rem;
-    margin: 0 auto;
+    margin: -8rem auto 0;
     background-color: #ffffff;
     border-radius: 2%;
+    padding: 10rem 2rem 6rem;
     position: relative;
-    margin-top: -8rem;
-}
-.result-box{
-    position: absolute;
-    left: 50%;
-    top: 57%;
-    transform: translate(-50%,-50%);
-    width: 100%;
+    color: #000;
 }
 .result-title {
-    font-family: 'SBAggroM', sans-serif;
     font-size: 2.6rem;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
+    color: #424242;
 }
-.result-image {
-    padding: 3rem 0;
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: center;
+.result-title span{
+    font-size: 2rem;
 }
-.result-image img {
-    width: 60%;
+.result-title h2{
+    font-size: 6rem;
+    color: #33A474;
+    margin: 1rem auto 1.2rem;
 }
-.result-explain {
-    font-family: 'SBAggroM', sans-serif;
+.result-title p{
     font-size: 1.8rem;
-    font-weight: 100;
-    line-height: 1.5;
+    font-weight: 600;
+}
+
+.resultMessage1 .character{
+    font-family: 'GmarketSansMedium',sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+.resultMessage1 .fact{
+    font-size: 1.8rem;
+    text-align: left;
+}
+.resultMessage1 .fact h3{
+    color: #33A474;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+.resultMessage1 .fact ul{
+    list-style: square outside none;
+    padding: 0 2rem 0;
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+
+.hashtags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hashtags span{
+    font-size: 3rem;
+    color: #32587C;
+    border-radius: 100%;
+    border: 0.15rem solid #424242;
+    width: 4rem;
+    height: 4rem;
+    line-height: 1.3;
+    margin-right: 1rem;
+}
+.hashtags h3 {
+    background: none;
+    color: #32587C;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    text-align: left;
+    position: relative;
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+.let-share{
+    color: #000;
+}
+
+.add-message{
+    color: #ee3224;
+    opacity: 1;
 }
 
 /* responsive */
