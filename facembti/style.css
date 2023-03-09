@@ -157,9 +157,9 @@
     width: 100%;
 }
 
-#label-container {
+/* #label-container {
     display: none;
-}
+} */
 
 .image-title-wrap {
     padding: 1.2rem;
@@ -216,6 +216,8 @@
     font-weight: 600;
     color: rgb(51, 164, 116);
 }
+
+.label-container{}
 
 .resultMessage1 .character{
     font-family: 'GmarketSansMedium',sans-serif;
