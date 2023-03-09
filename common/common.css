@@ -23,9 +23,7 @@
     text-transform: capitalize;
     transition: all .2s linear;
 }
-html {
-    font-size: min(2vw, 18px);
-}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #020200;
@@ -334,6 +332,10 @@ a {
 
 /* responsive */
 @media screen and (max-width: 768px) {
+    html {
+    font-size: min(2vw, 18px);
+    }
+    
     .header {
         flex-direction: column;
         align-items: flex-start;

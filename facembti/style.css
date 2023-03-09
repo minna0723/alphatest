@@ -22,8 +22,7 @@
     background-size: cover;
     margin: auto;
     padding: 1rem 0;
-    width: 67rem;
-    max-width: 100%;
+    width: 768px;
 }
 
 .suject {
@@ -33,11 +32,11 @@
 }
 .suject .txt_face{
     color: #000;
-    font-size: 8rem;
+    font-size: 7.8rem;
     -webkit-text-stroke: 0.2rem #fff;
 }
 .suject .txt_mbti{
-    font-size: 8rem;
+    font-size: 7.8rem;
     -webkit-text-stroke: 0.3rem #40220F;
 }
 .txt_mbti_m{color: #FFC509;}
@@ -48,7 +47,7 @@
 .subject_eng{
     text-align: center;
     color: #000;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: -0.4rem;
 }
 
@@ -57,16 +56,17 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    margin: 2rem 0 3rem;
+    margin: 1.2rem 0 2.2rem;
 }
 .precise div{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.6);
-    width: 28%;
-    padding: 1.1rem 1rem 1.6rem;
-    height: 8rem;
+    width: 31%;
+    padding: 0.8rem 0 0.6rem;
+    height: 8.2rem;
 }
 .precise div img{
+    width: 4.6rem;
     margin-bottom: 0.8rem;
 }
 .precise div p{
@@ -77,7 +77,7 @@
 
 .file-upload{
     position: relative;
-    width: 46rem;
+    width: 44rem;
     margin: auto;
 }
 .file-upload.result_bg::before{
@@ -95,8 +95,8 @@
 .image-upload-wrap {
     border-radius: 18%;
     background-color: #93BAD7;
-    height: 20rem;
-    width: 24rem;
+    height: 16rem;
+    width: 20rem;
     margin: 0 auto;
     position: relative;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -128,8 +128,8 @@
 .image-upload-wrap .upload_btn::before{
     content: '';
     display: inline-block;
-    width: 6rem;
-    height:6rem;
+    width: 4rem;
+    height:4rem;
     border-radius: 100%;
     background: #fff url(img/camera_icon.png) center center no-repeat;
     background-size:84%;
@@ -141,14 +141,14 @@
 .image-upload-wrap .upload_btn p{
     font-family: 'GmarketSansMedium',sans-serif;
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: rgba(0, 0, 0, 0.8);
     margin: 0 auto 0.4rem;
     line-height: 1.2;
     text-align: center;
 }
 .image-upload-wrap .upload_btn i{
-    font-size: 14rem;
+    font-size: 11rem;
     color: rgba(255, 255, 255, 0.6);
 }
 .file-upload-content {
@@ -156,10 +156,6 @@
     text-align: center;
     width: 100%;
 }
-
-/* #label-container {
-    display: none;
-} */
 
 .image-title-wrap {
     padding: 1.2rem;
@@ -170,8 +166,8 @@
     position: relative;
     border-radius: 100%;
     overflow: hidden;
-    width: 18rem;
-    height: 18rem;
+    width: 14rem;
+    height: 14rem;
     margin: auto;
     z-index: 1;
     border: 0.3rem solid #fff;
@@ -188,11 +184,11 @@
 
 .loadingBox {
     display: none;
-    width: 42rem;
+    width: 40rem;
     margin: -8rem auto 0;
     background-color: #ffffff;
     border-radius: 1rem;
-    padding: 10rem 2rem 4rem;
+    padding: 8.8rem 2rem 4rem;
     position: relative;
     color: #000;
 }
@@ -203,25 +199,94 @@
 .result-title span{
     font-size: 1.6rem;
 }
-.result-title span span{
-    font-size: 2rem;
+.result-title span strong{
+    font-size: 1.6rem;
+    line-height: 1.8;
 }
 .result-title h2{
-    font-size: 5.6rem;
+    font-size: 5.4rem;
     color: #33A474;
-    margin: 1rem auto 1.2rem;
+    margin: 0.4rem auto 1.2rem;
 }
 .result-title p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: rgb(51, 164, 116);
+    margin-bottom: 1.8rem;
 }
 
-.label-container{}
+.label-container{
+    width: 38rem;
+    margin: auto;
+}
+.label-container .d-flex{
+    margin-bottom: 0.6rem;
+}
+.label-container .d-flex #bar_wrap{
+    display: flex;
+    align-items: center;
+}
+#bar_wrap .mbti-label{
+    width: 16%;
+    font-size: 1.8rem;
+    margin-right: 0.4rem;
+}
+#bar_wrap .bar-container{
+    width: 83%;
+}
+.bar-container .bar-box{
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+.ISTJ-1-box.bar-box{background: rgba(255, 128, 237, 0.2);}
+.ISFJ-2-box.bar-box{background: rgba(6,85,53, 0.2);}
+.INFJ-3-box.bar-box{background: rgba(8,141,165, 0.2);}
+.INTJ-4-box.bar-box{background: rgba(0,128,128, 0.2);}
+.ISTP-5-box.bar-box{background: rgba(255, 0, 0, 0.2);}
+.ISFP-6-box.bar-box{background: rgba(255, 165, 0, 0.2);}
+.INFP-7-box.bar-box{background: rgba(0, 0, 255, 0.2);}
+.INTP-8-box.bar-box{background: rgba(255, 155, 155, 0.2);}
+.ESTP-9-box.bar-box{background: rgba(186, 218, 85, 0.2);}
+.ESFP-10-box.bar-box{background: rgba(0, 51, 102, 0.2);}
+.ENFP-11-box.bar-box{background: rgba(128, 0, 128, 0.2);}
+.ENTP-12-box.bar-box{background: rgba(255,0,255, 0.2);}
+.ESTJ-13-box.bar-box{background: rgba(255,127,80, 0.2);}
+.ESFJ-14-box.bar-box{background: rgba(70,132,153, 0.2);}
+.ENFJ-15-box.bar-box{background: rgba(0,128,0, 0.2);}
+.ENTJ-16-box.bar-box{background: rgba(255,64,64, 0.2); }
+.MASK-17-box.bar-box{background: rgba(10,117,173, 0.2);}
+.CUTE-18-box.bar-box{background: rgba(138,43,226, 0.2);}
+.NOPE-19-box.bar-box{background: rgba(121,64,68, 0.2);}
+.bar-container .bar-box > div{
+    padding: 0.2rem 0.1rem;
+}
+.ISTJ-1-bar{background: #ff80ed;}
+.ISFJ-2-bar{background: #065535;}
+.INFJ-3-bar{background: #088da5;}
+.INTJ-4-bar{background: #008080;}
+.ISTP-5-bar{background: #ff0000;}
+.ISFP-6-bar{background: #ffa500;}
+.INFP-7-bar{background: #0000ff;}
+.INTP-8-bar{background: #ff7373;}
+.ESTP-9-bar{background: #bada55;}
+.ESFP-10-bar{background: #003366;}
+.ENFP-11-bar{background: #800080;}
+.ENTP-12-bar{background: #ff00ff;}
+.ESTJ-13-bar{background: #ff7f50;}
+.ESFJ-14-bar{background: #468499;}
+.ENFJ-15-bar{background: #008000;}
+.ENTJ-16-bar{background: #ff4040;}
+.MASK-17-bar{background: #0a75ad;}
+.CUTE-18-bar{background: #8a2be2;}
+.NOPE-19-bar{background: #794044;}
+.bar-container .percent-text{
+    color: #fff;
+    font-size: 1.4rem;
+}
 
 .resultMessage1 .character{
     font-family: 'GmarketSansMedium',sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.45;
     text-align: left;
     margin-bottom: 4rem;
@@ -232,7 +297,7 @@
 }
 .resultMessage1 .fact h3{
     color: #33A474;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
 }
@@ -240,7 +305,7 @@
     list-style: square outside none;
     padding: 0 2rem 0;
     font-family: 'GmarketSansMedium', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.4;
 }
 .resultMessage1 .keyword {
@@ -249,13 +314,13 @@
 .resultMessage1 .keyword h3{
     text-align: left;
     color: #33A474;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
 }
 .resultMessage1 .keyword ul{
     position: relative;
-    height: 14.8rem;
+    height: 14rem;
     border: 0.1rem solid #424242;
     border-radius: 100%;
 }
@@ -264,38 +329,38 @@
     font-family: 'SBAggroM',sans-serif;
 }
 .resultMessage1 .keyword ul li:nth-child(1){
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #2BF538;
     top: 4rem;
     left: 29rem;
 }
 .resultMessage1 .keyword ul li:nth-child(2){
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #9c14db;
     top: 10rem;
     left: 7rem;
 }
 .resultMessage1 .keyword ul li:nth-child(3){
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #f01a8c;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
 }
 .resultMessage1 .keyword ul li:nth-child(4){
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #5892F5;
     top: 3rem;
     left: 8rem;
 }
 .resultMessage1 .keyword ul li:nth-child(5){
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #F5BA40;
     top: 10rem;
     left: 25rem;
 }
 .resultMessage1 .keyword ul li:nth-child(6){
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: #4082F5;
     top: 13rem;
     left: 10rem;
@@ -307,13 +372,13 @@
 }
 .resultMessage2 .luvstyle h3{
     color: #33A474;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
 }
 .resultMessage2 .luvstyle p{
     font-family: 'GmarketSansMedium',sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.45;
 }
 .resultMessage2 .luvstyle p .light_line{
@@ -325,7 +390,7 @@
 }
 .resultMessage2 .mbticouple h3{
     color: #33A474;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
 }
@@ -341,7 +406,7 @@
 }
 .resultMessage2 .mbticouple p{
     font-family: 'GmarketSansMedium',sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.4;
 }
 .resultMessage2 .samembti{
@@ -350,7 +415,7 @@
 }
 .resultMessage2 .samembti h3{
     color: #33A474;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
 }
@@ -359,7 +424,7 @@
     flex-wrap: wrap;
 }
 .resultMessage2 .samembti ul li{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     background: rgba(0, 0, 0, 0.08);
     margin-right: 0.8rem;
     margin-bottom: 0.8rem;
@@ -377,6 +442,10 @@
 
 /* responsive */
 @media screen and (max-width:768px){
+    .test_bg{
+        width: auto;
+        min-width: 100%;
+    }
     .suject .txt_face{
         font-size: 10rem;
     }
@@ -388,11 +457,37 @@
         margin-top: -0.6rem;
     }
 
+    .file-upload{
+        width: 46rem;
+    }
+    .loadingBox{
+        width: 42rem;
+    }
+    .image-upload-wrap{
+        width: 24rem;
+        height: 20rem;
+    }
+    .image-upload-wrap .upload_btn::before{
+        width: 6rem;
+        height: 6rem;
+    }
+    .image-upload-wrap .upload_btn p{
+        font-size: 1.7rem;
+    }
+    .image-upload-wrap .upload_btn i{
+        font-size: 14rem;
+    }
+
+    .result-container{
+        width: 18rem;
+        height: 18rem;
+    }
+
     .result-title span{
         font-size: 2rem;
     }
-    .result-title span span{
-        font-size: 2.4rem;
+    .result-title span strong{
+        font-size: 2.2rem;
     }
     .result-title h2{
         font-size: 6rem;
@@ -406,6 +501,7 @@
     }
     .resultMessage1 .fact h3{
         font-size: 2.8rem;
+        margin-bottom: 1.4rem;
     }
     .resultMessage1 .fact ul{
         font-size: 1.8rem;
@@ -437,12 +533,14 @@
 
     .resultMessage2 .luvstyle h3{
         font-size: 2.8rem;
+        margin-bottom: 1.4rem;
     }
     .resultMessage2 .luvstyle p{
         font-size: 1.8rem;
     }
     .resultMessage2 .mbticouple h3{
         font-size: 2.8rem;
+        margin-bottom: 1.4rem;
     }
     .resultMessage2 .mbticouple .bestcouple{
         padding: 0.4rem 1rem 0.1rem;
@@ -453,6 +551,7 @@
     }
     .resultMessage2 .samembti h3{
         font-size: 2.8rem;
+        margin-bottom: 1.4rem;
     }
     .resultMessage2 .samembti ul li{
         font-size: 1.8rem;
@@ -463,6 +562,7 @@
 
     .precise {
         flex-direction: column;
+        margin: 2rem 0 3rem;
     }
     .precise div{
         width: 88%;
