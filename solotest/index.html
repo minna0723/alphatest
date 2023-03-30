@@ -20,14 +20,14 @@
     content="솔로 테스트, AI 솔로 테스트, 관상 테스트, 외모 테스트, AI 얼굴평가, 얼굴 테스트, AI 테스트, 인공지능 테스트, 얼굴상 테스트, AI 얼굴상, 심리 테스트, alphaface, 알파페이스">
   <meta name="author" content="알파페이스(AlphaFace)">
   <meta name="description"
-    content="솔로 테스트, AI, 인공지능이 당신의 솔로인지 판독해드립니다. 당신은 남자친구, 여자친구가 있습니까? 수 많은 데이터를 학습한 AI가 당신의 호감도, 관상을 분석하여 솔로인지 판별합니다. 솔로 테스트를 통해 확인해보시고 결과 공유로 정확도를 확인해보세요.">
+    content="솔로 테스트, AI, 인공지능이 당신이 솔로인지 판독해드립니다. 당신은 남자친구, 여자친구가 있습니까? 수 많은 데이터를 학습한 AI가 당신의 호감도, 관상을 분석하여 솔로인지 판별합니다. 솔로 테스트를 통해 확인해보시고 결과 공유로 정확도를 확인해보세요.">
   <meta name="robots" content="index,follow">
   <meta property="og:url" content="https://alphaface-ai.com/solotest/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="솔로 테스트">
   <meta property="og:description"
-    content="솔로 테스트, AI, 인공지능이 당신의 솔로인지 판독해드립니다. 당신은 남자친구, 여자친구가 있습니까? 수 많은 데이터를 학습한 AI가 당신의 호감도, 관상을 분석하여 솔로인지 판별합니다. 솔로 테스트를 통해 확인해보시고 결과 공유로 정확도를 확인해보세요.">
-  <meta property="og:image" content="https://alphaface-ai.com/img/pheromonetest.jpg">
+    content="솔로 테스트, AI, 인공지능이 당신이 솔로인지 판독해드립니다. 당신은 남자친구, 여자친구가 있습니까? 수 많은 데이터를 학습한 AI가 당신의 호감도, 관상을 분석하여 솔로인지 판별합니다. 솔로 테스트를 통해 확인해보시고 결과 공유로 정확도를 확인해보세요.">
+  <meta property="og:image" content="https://alphaface-ai.com/img/solotest.jpg">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://alphaface-ai.com/solotest/">
 
@@ -124,82 +124,96 @@
   </div>
 
   <!-- Main -->
-  </div>
-  <h1 class="suject">AI 솔로 테스트</h1>
-  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <div class="test_bg">
+    <h1 class="suject"><span class="txt_solo">솔로</span> 테스트</h1>
 
-  <div>
-    <p class="precise">※ 페로몬 : 이성을 유혹하는 화학적 신호</p>
-  </div>
-
-  <div class="file-upload">
-    <div class="image-upload-wrap">
-      <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
+    <div class="precise">
+      <div>
+        <img src="img/precise_icon1.png" alt="clock">
+        <p>당신의 애인 유무를 확인하는 AI 솔로 판독기입니다.</p>
+      </div>
+      <div>
+        <img src="img/precise_icon2.png" alt="robot">
+        <p>사람 얼굴을 학습한 AI가 호감도, 관상을 분석한 결과입니다.</p>
+      </div>
+      <div>
+        <img src="img/precise_icon3.png" alt="think">
+        <p>100%의 정확도가 아닌, 예상값 입니다.</p>
+      </div>
     </div>
-    <span class="result-label">
-      <div class="file-upload-content">
-        <div class="result-container">
-          <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="file-upload">
+      <div class="image-upload-wrap">
+        <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
+        <div class="upload_btn">
+          <p>클릭하여 얼굴사진을 넣어주세요.</p>
+          <i class="fa-solid fa-user"></i>
         </div>
-        <div class="result-message"></div>
-        <div id="label-container"></div>
-        <div class="image-title-wrap"></div>
-        <div class="loadingBox">
-          <div class="dim"></div>
-          <div class="circle"></div>
+      </div>
+      <span class="result-label">
+        <div class="file-upload-content">
+          <div class="result-container">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+          </div>
+          <div class="result-message"></div>
+          <div class="loadingBox">
+            <div class="dim"></div>
+            <div class="circle"></div>
+          </div>
+          <button type="button" onclick="removeUpload()" class="remove-image">
+            <i class="fa-solid fa-rotate-right"></i> 다른 사진으로 재시도
+          </button>
         </div>
-    </span>
-    <button type="button" onclick="removeUpload()" class="remove-image">
-      <i class="fa-solid fa-rotate-right"></i> 다른 사진으로 재시도
-    </button>
+      </span>
+    </div>
+
+    <div class="hashtags_1">
+      <span>#</span> <h3>#hashtags #follow #like<br>#솔로 테스트 #솔로 판독기 #나는 솔로</h3>
+    </div>
+
+    <div class="let-share">
+      <p>공유하기 ↯</p>
+    </div>
+  
+    <div class="share">
+  
+      <span class="naver">
+        <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+        <script type="text/javascript">
+          new ShareNaver.makeButton({
+            "type": "d"
+          });
+        </script>
+  
+  
+        <a href="https://www.instagram.com/" target="_blank"><img src="/common/img/insta.png" alt="인스타그램 공유"></a>
+  
+      </span>
+  
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <span class="addthis_inline_share_toolbox_y39o"></span>
+  
+    </div>
+  
+    <div class="share-btn">
+      <a href="#" onclick="link_copy(); return false;"><i class="fa-solid fa-link"></i> 링크 복사하기</a>
+    </div>
+  
+    <div class="add-message">
+      <p>* 사진은 시스템에 절대 저장되지 않습니다.</p>
+      <p>* 현실 반영되어 각도, 배경에 따라 결과가 다르게 나타날 수 있습니다.</p>
+      <p>* 결과 공유를 통해 정확도를 확인해보세요.</p>
+    </div>
+  
+    <div class="other-test">
+      <button><a href="/enjoy/">다른 테스트하러 가기</a></button>
+    </div>
+    
   </div>
-  </div>
 
 
-  <div class="hashtags">
-    <h3>#hashtags #follow #like<br>#페로몬 테스트 #페로몬 점수 #나의 페로몬</h3>
-  </div>
 
-
-  <div class="let-share">
-    <p>공유하기 ↯</p>
-  </div>
-
-  <div class="share">
-
-    <span class="naver">
-      <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
-      <script type="text/javascript">
-        new ShareNaver.makeButton({
-          "type": "d"
-        });
-      </script>
-
-
-      <a href="https://www.instagram.com/" target="_blank"><img src="/common/img/insta.png" alt="인스타그램 공유"></a>
-
-    </span>
-
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <span class="addthis_inline_share_toolbox_y39o"></span>
-
-  </div>
-
-  <div class="share-btn">
-    <a href="#" onclick="link_copy(); return false;"><i class="fa-solid fa-link"></i> 링크 복사하기</a>
-  </div>
-
-  <div class="add-message">
-    <p>* 사진은 시스템에 절대 저장되지 않습니다.</p>
-    <p>* 현실 반영되어 각도, 배경에 따라 결과가 다르게 나타날 수 있습니다.</p>
-    <p>* 결과 공유를 통해 정확도를 확인해보세요.</p>
-  </div>
-
-  <div class="other-test">
-
-    <button><a href="/enjoy/">다른 테스트하러 가기</a></button>
-
-  </div>
 
   <div class="adsense">
 
@@ -226,8 +240,8 @@
   <!-- JS -->
   <div id="webcam-container"></div>
   <div id="label-container"></div>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
   <script>
     function readURL(input) {
       if (input.files && input.files[0]) {
@@ -239,6 +253,7 @@
           $('.file-upload-content').show();
           $('.image-title').html(input.files[0].name);
           $('.file-upload').css('height', 'auto');
+          $('.precise').hide();
         };
 
         reader.readAsDataURL(input.files[0]);
@@ -260,7 +275,7 @@
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = "https://teachablemachine.withgoogle.com/models/cY2CST7hC/";
+    const URL = "https://teachablemachine.withgoogle.com/models/aHl2cJfyn/";
 
     let model, webcam, labelContainer, maxPredictions;
 
@@ -293,60 +308,36 @@
       console.log(prediction[0].className);
       var resultImage, resultTitle, resultMessage;
       switch (prediction[0].className) {
-        case '하트5':
-          resultTitle = "<p style='color:#000000;'>나의 페로몬 점수는?</p>"
+        case '1있음':
+          resultTitle = "<p><span>Q. AI 솔로 판독기</span>의 분석 결과는?</p>"
           resultImage =
-            "<img src='img/score/score5.png' alt='페로몬 점수'>"
+            "<img src='img/final_o.png' alt='커플'>"
           resultMessage =
-            "<p style='color:#808080;'>언제, 어디서든 사람을 끌어당기는 힘이 있습니다.<br>가만히 있어도 상대가 다가올 것 입니다.</p>";
+            "<img src='img/ai_robot.png' alt='AI robot'> <div><div class='bot_profile'>AI <span>(인공지능) / 솔로 판독기</span></div><p id='couple_comment'></p></div>";
           break;
 
-        case '하트4.5':
-          resultTitle = "<p style='color:#000000;'>나의 페로몬 점수는?</p>"
+        case '2없음':
+          resultTitle = "<p><span>Q. AI 솔로 판독기</span>의 분석 결과는?</p>"
           resultImage =
-            "<img src='img/score/score45.png' alt='페로몬 점수'>"
+            "<img src='img/final_x.png' alt='솔로'>"
           resultMessage =
-            "<p style='color:#808080;'>당신을 좋아하는 사람이 분명히 있습니다.<br>주변을 살펴보세요.</p>";
+            "<img src='img/ai_robot.png' alt='AI robot'> <div><div class='bot_profile'>AI <span>(인공지능) / 솔로 판독기</span></div><p id='solo_comment'></p></div>";
           break;
 
-        case '하트4':
-          resultTitle = "<p style='color:#000000;'>나의 페로몬 점수는?</p>"
+        case '3마스크':
+          resultTitle = "<p><span>Q. AI 솔로 판독기</span>의 분석 결과는?</p>"
           resultImage =
-            "<img src='img/score/score4.png' alt='페로몬 점수'>"
+            "<img src='img/final_error.png' alt='판독불가'>"
           resultMessage =
-            "<p style='color:#808080;'>본인만의 은은한 매력이 있습니다.<br>상대에게 큰 어필이 한번 필요할 수 있습니다.</p>";
+            "<img src='img/ai_robot.png' alt='AI robot'> <div><div class='bot_profile'>AI <span>(인공지능) / 솔로 판독기</span></div><p>&quot;다른 사진으로 시도해주세요.&quot;</p></div>";
           break;
 
-        case '하트3':
-          resultTitle = "<p style='color:#000000;'>나의 페로몬 점수는?</p>"
+        case '4사람이아닙니다':
+          resultTitle = "<<p><span>Q. AI 솔로 판독기</span>의 분석 결과는?</p>"
           resultImage =
-            "<img src='img/score/score3.png' alt='페로몬 점수'>"
+            "<img src='img/final_error.png' alt='판독불가'>"
           resultMessage =
-            "<p style='color:#808080;'>노력에 따라 충분히 이성을 끌어당길 수 있습니다.<br>분위기 반전을 통해 이성에게 매력을 보여주세요.</p>";
-          break;
-
-        case '하트2':
-          resultTitle = "<p style='color:#000000;'>나의 페로몬 점수는?</p>"
-          resultImage =
-            "<img src='img/score/score2.png' alt='페로몬 점수'>"
-          resultMessage =
-            "<p style='color:#808080;'>이미지 관리에 신경써야합니다.<br>친구는 많지만, 이성으로써는 확실한 매력이 필요합니다.</p>";
-          break;
-
-        case '하트1':
-          resultTitle = "<p style='color:#000000;'>나의 페로몬 점수는?</p>"
-          resultImage =
-            "<img src='img/score/score1.png' alt='페로몬 점수'>"
-          resultMessage =
-            "<p style='color:#808080;'>친구는 많지만, 이성으로써는 확실한 매력이 필요합니다.<br>당신의 사진을 넣어주세요.</p>";
-          break;
-
-        case '측정 불가':
-          resultTitle = "<p style='color:#000000;'>나의 페로몬 점수는?</p>"
-          resultImage =
-            "<img src='img/score/score0.png' alt='페로몬 점수'>"
-          resultMessage =
-            "<p style='color:#808080;'>다른 사진으로 다시 시도하세요.</p>";
+            "<img src='img/ai_robot.png' alt='AI robot'> <div><div class='bot_profile'>AI <span>(인공지능) / 솔로 판독기</span></div><p>&quot;판독이 어렵습니다.&quot;</p></div>";
           break;
 
         default:
@@ -358,12 +349,91 @@
       var message = "<div class='result-explain'>" + resultMessage + "</div></div>"
 
       $('.loadingBox').html('.result-message').html(title + image + message);
+
+      /* random comment */
+      var couple_comment = document.getElementById('couple_comment');
+      var solo_comment = document.getElementById('solo_comment');
+      var couple_comment_random = [
+        {
+          couple_comment :'"애인이 확실히 있습니다."'
+        },
+        {
+          couple_comment :'"애인이 있을 가능성이 높습니다."'
+        },
+        {
+          couple_comment :'"애인이 높은 확률로 있습니다."'
+        },
+        {
+          couple_comment :'"애매하지만 애인이 있습니다."'
+        },
+        {
+          couple_comment :'"애인있잖아. 틀릴 줄 알았지?"'
+        },
+        {
+          couple_comment :'"뭐야... 애인이 있네?"'
+        },
+        {
+          couple_comment :'"애인이 100% 있습니다."'
+        },
+        {
+          couple_comment :'"오래 만나라."'
+        },
+        {
+          couple_comment :'"애인있어서 부럽다."'
+        },
+        {
+          couple_comment :'"애인이랑 행복해라."'
+        },
+        {
+          couple_comment :'"왜 배가 아프지?"'
+        },
+      ];
+      var solo_comment_random = [
+        {
+          solo_comment :'"애인이 확실히 없습니다."'
+        },
+        {
+          solo_comment :'"애인이 없을 가능성이 높습니다."'
+        },
+        {
+          solo_comment :'"애인이 높은 확률로 없습니다."'
+        },
+        {
+          solo_comment :'"애매하지만 애인이 없습니다."'
+        },
+        {
+          solo_comment :'"애인없잖아. 틀릴 줄 알았지?"'
+        },
+        {
+          solo_comment :'"뭐야... 애인이 없네?"'
+        },
+        {
+          solo_comment :'"애인이 100% 없습니다."'
+        },
+        {
+          solo_comment :'"곧 생길거야..."'
+        },
+        {
+          solo_comment :'"괜찮아..."'
+        },
+        {
+          solo_comment :'"그럴 수 있어..."'
+        },
+        {
+          solo_comment :'"모태 솔로는 아니지?"'
+        },
+      ];
+      if(couple_comment){
+        couple_comment.textContent = couple_comment_random[Math.floor(Math.random() * couple_comment_random.length)].couple_comment;
+      }else if(solo_comment){
+        solo_comment.textContent = solo_comment_random[Math.floor(Math.random() * solo_comment_random.length)].solo_comment;
+      };
+
       for (let i = 0; i < maxPredictions; i++) {
         const classPrediction =
-          prediction[i].className + ': ' + prediction[i].probability.toFixed(2);
+        prediction[i].className + ': ' + prediction[i].probability.toFixed(2);
         labelContainer.childNodes[i].innerHTML = classPrediction;
       }
-
     }
   </script>
   <script src="/common/common.js"></script>
